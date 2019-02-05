@@ -23,15 +23,21 @@ class Nav extends Component {
             <p>Dashboard</p>
           </Link>
         </li>
-        <li className={location.pathname === '/calender' ? 'active' : null}>
-          <Link to="/calender">
+        <li className={location.pathname === '/profile' ? 'active' : null}>
+          <Link to="/profile">
             <i className="pe-7s-home"></i>
             <p>Profile</p>
           </Link>
         </li>
+        <li className={location.pathname === '/portfolio' ? 'active' : null}>
+          <Link to="/portfolio">
+            <i className="pe-7s-home"></i>
+            <p>Portfolio</p>
+          </Link>
+        </li>
 
 
-{/*         
+{/*          
         <li className={this.isPathActive('/components') || this.state.componentMenuOpen ? 'active' : null}>
           <a onClick={() => this.setState({ componentMenuOpen: !this.state.componentMenuOpen })}
             data-toggle="collapse">
